@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hotel Reservas</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>Reserva tu habitación</h1>
+
+
+
+<form id="formReserva">
+
+
+
+<label for="nombre">
+Nombre completo
+</label>
+
+<input 
+id="nombre" 
+type="text"
+placeholder="Escribe tu nombre"
+required>
+
+
+
+<label for="correo">
+Correo electrónico
+</label>
+
+<input 
+id="correo" 
+type="email"
+placeholder="ejemplo@gmail.com"
+required>
+
+
+
+<label for="telefono">
+Teléfono
+</label>
+
+<input 
+id="telefono"
+type="tel"
+placeholder="Número telefónico"
+required>
+
+
+
+
+<label for="checkin">
+Fecha de entrada (Check-in)
+</label>
+
+<input 
+id="checkin"
+type="date"
+required>
+
+
+
+
+<label for="checkout">
+Fecha de salida (Check-out)
+</label>
+
+<input 
+id="checkout"
+type="date"
+required>
+
+
+
+
+
+<label for="adultos">
+Cantidad de adultos
+</label>
+
+<input 
+id="adultos"
+type="number"
+min="1"
+value="1"
+required>
+
+
+
+
+
+<label for="ninos">
+Cantidad de niños
+</label>
+
+<input 
+id="ninos"
+type="number"
+min="0"
+value="0">
+
+
+
+
+
+<label for="habitacion">
+Tipo de habitación
+</label>
+
+
+<select id="habitacion">
+
+
+<option value="Suite">
+Suite
+</option>
+
+
+<option value="Doble">
+Doble
+</option>
+
+
+<option value="Sencilla">
+Sencilla
+</option>
+
+
+</select>
+
+
+
+
+
+
+<label for="solicitudes">
+Solicitudes especiales
+</label>
+
+
+<textarea 
+id="solicitudes"
+placeholder="Ejemplo: cama extra, habitación tranquila, etc."
+></textarea>
+
+
+
+
+
+<button type="submit">
+Reservar
+</button>
+
+
+
+
+</form>
+
+
+
+<p id="mensaje"></p>
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+```
